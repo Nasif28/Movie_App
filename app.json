@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
     "scheme": "movies",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "automatic", 
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -30,7 +30,7 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/logo.png",
-          "imageWidth": 200,
+          "imageWidth": 150,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }

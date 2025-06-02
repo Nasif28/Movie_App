@@ -1,17 +1,17 @@
-import {
-  View,
-  Text,
-  Image,
-  ActivityIndicator,
-  ScrollView,
-  TouchableOpacity,
-} from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
+import {
+  ActivityIndicator,
+  Image,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { icons } from "@/constants/icons";
-import useFetch from "@/services/usefetch";
 import { fetchMovieDetails } from "@/services/api";
+import useFetch from "@/services/usefetch";
 
 interface MovieInfoProps {
   label: string;
@@ -114,7 +114,7 @@ const Details = () => {
       </ScrollView>
 
       <TouchableOpacity
-        className="absolute bottom-5 left-0 right-0 mx-5 bg-accent rounded-lg py-3.5 flex flex-row items-center justify-center z-50"
+        className="absolute bottom-10 left-0 right-0 mx-5 bg-accent rounded-lg py-3.5 flex flex-row items-center justify-center z-50"
         onPress={router.back}
       >
         <Image

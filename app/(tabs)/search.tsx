@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
-import { ActivityIndicator, FlatList, Image, Text, View } from "react-native";
-
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
-
 import { fetchMovies } from "@/services/api";
 import { updateSearchCount } from "@/services/appwrite";
 import useFetch from "@/services/usefetch";
+import { useEffect, useState } from "react";
+import { ActivityIndicator, FlatList, Image, Text, View } from "react-native";
 
 import MovieDisplayCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
@@ -64,7 +62,7 @@ const Search = () => {
         contentContainerStyle={{ paddingBottom: 100 }}
         ListHeaderComponent={
           <>
-            <View className="w-full flex-row justify-center mt-20 items-center">
+            <View className="w-full flex-row justify-center mt-16 items-center">
               <Image source={icons.logo} className="w-12 h-10" />
             </View>
 
@@ -103,7 +101,7 @@ const Search = () => {
         }
         ListEmptyComponent={
           !loading && !error ? (
-            <View className="mt-10 px-5">
+            <View className=" px-5">
               <Text className="text-center text-gray-500">
                 {searchQuery.trim()
                   ? "No movies found"
