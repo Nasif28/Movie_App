@@ -1,21 +1,21 @@
 {
   "expo": {
-    "name": "movie_app",
-    "slug": "movie_app",
+    "name": "Movie App",
+    "slug": "Movie_App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
     "scheme": "movies",
-    "userInterfaceStyle": "automatic", 
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo.png",
-        "backgroundColor": "#ffffff"
-      },
+      // "adaptiveIcon": {
+      //   "foregroundImage": "./assets/images/logo.png",
+      //   "backgroundColor": "#ffffff"
+      // },
       "edgeToEdgeEnabled": true,
       "package": "com.nasif28.movie_app"
     },
